@@ -1,9 +1,8 @@
-# Project Title
+# WDX - Web Data Extraction
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 
-
-This is another Open Source Project.
+An opensource golang tool for extracting useful data from web.
 
 ## Contributing
 
@@ -13,7 +12,7 @@ We'd love to accept your patches and contributions to this project. There are ju
 
 This project follows [Contributor Covenant](https://www.contributor-covenant.org/)
 as it's Code of Conduct, and we expect all project participants to adhere to it.
-Please read the [full guide](./CODE_OF_CONDUCT.md) so that you can understand 
+Please read the [full guide](./CODE_OF_CONDUCT.md) so that you can understand
 what actions will not be tolerated.
 
 ### [Contributing Guide](./CONTRIBUTING.md)
