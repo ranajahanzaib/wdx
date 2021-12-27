@@ -20,9 +20,11 @@ import (
 ```go
 
 func main() {
-  links := wdx.ScrapLinks("https://en.wikipedia.org/wiki/Web_scraping", ".mw-parser-output")
+  links, err := wdx.ScrapLinks("https://en.wikipedia.org/wiki/Web_scraping", ".mw-parser-output")
 
-  wdx.Log(links)
+  if err != nil
+    fmt.Println("WDX_ERR: " + err)
+  else wdx.Log(links)
 }
 
 ```
