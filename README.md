@@ -4,6 +4,29 @@
 
 An opensource golang tool for extracting useful data from web.
 
+## Get Started
+
+### Import `wdx` package
+
+```go
+import (
+  "fmt"
+  "github.com/ranajahanzaib/wdx"
+)
+```
+
+### Usage
+
+```go
+
+func main() {
+  links := wdx.ScrapLinks("https://en.wikipedia.org/wiki/Web_scraping", ".mw-parser-output")
+
+  wdx.Log(links)
+}
+
+```
+
 ## Contributing
 
 We'd love to accept your patches and contributions to this project. There are just a few guidelines you need to follow.
