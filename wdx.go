@@ -19,7 +19,7 @@ func Log(format string, args ...interface{}) {
 }
 
 // Scrap links from a given URL using class name, and return the links
-func ScrapLinks(url string, className string) []string {
+func ScrapLinks(url string, className string) ([]string, error) {
 	var links []string
 	c := colly.NewCollector(
 		colly.AllowedDomains("en.wikipedia.org"),
@@ -29,5 +29,5 @@ func ScrapLinks(url string, className string) []string {
 		links = e.ChildAttrs("a", "href")
 	})
 	c.Visit(url)
-	return links
+	return links, nil
 }
