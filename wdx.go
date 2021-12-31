@@ -31,3 +31,17 @@ func ScrapLinks(url string, className string) ([]string, error) {
 	c.Visit(url)
 	return links, nil
 }
+
+// Scrap links from a given website using class name, url and return the links
+func ScrapLinksFrom(site, url string, className string) ([]string, error) {
+	var links []string
+	c := colly.NewCollector(
+		colly.AllowedDomains(site),
+	)
+
+	c.OnHTML(className, func(e *colly.HTMLElement) {
+		links = e.ChildAttrs("a", "href")
+	})
+	c.Visit(url)
+	return links, nil
+}
