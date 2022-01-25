@@ -1,0 +1,10 @@
+{
+  "workdir": "scrap",
+  "services": [
+    {
+      "mobiles": {},
+      "laptops": {},
+      "tablets": {}
+    }
+  ]
+}
